@@ -1,0 +1,432 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* main page  */
+body{ 
+    height: 100%;
+    background-color: #F2F2F2; 
+    
+}
+
+.btn{
+    background-color: #3539DB;
+    color: white;
+
+}
+
+.app{
+    position: fixed;
+    width: 100%;
+    height: 700px;
+    border: 1px solid #D9D9D9;
+    background-color: white;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width:400px; 
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+nav{
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+.app h1{
+    font-size: 25px;
+    margin-top: 2em;
+    cursor: default;
+
+}
+
+header{
+    width: 100%;
+    height: 50%;
+    border: 1px solid #D9D9D9;
+    border-top: none;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ 
+.img-right{
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+.icon{
+    
+    background-image: url("/public/images/flatLight31.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 2em;
+    width: 2em;
+}
+
+
+.img-center{
+    background-image: url("/public/images/q.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 60%;
+    height: 60%; 
+
+}
+
+
+form{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+form .pesquisa{
+    height: 3em;
+    width: 60%;
+    outline: none;border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    
+}
+
+.btn-enviar{ 
+    width: 4em;
+    height: 3em;
+    background-color: #3539DB;
+    border-top-right-radius:1em;
+    border-bottom-right-radius: 1em;
+}
+
+
+
+/* Login page  */
+.img-center-login{
+    background-image: url("/public/images/login.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 60%;
+    height: 60%; 
+
+}
+.color{
+    background-color: #3539DB;
+}
+
+.login-form{ 
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;  
+
+}
+
+.mt-2{ 
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.remember{ 
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.login-form #password, .login-form #nome,.btn-submit{
+    width: 70%; 
+}
+
+
+.login-form .btn-submit{
+    background-color: rgb(1, 1, 61);
+    color: white;
+}
+.login-form .btn-submit:hover{
+    transition: 0.5s ease;
+    background-color:rgb(15, 15, 122);
+}
+ 
+
+/* forget password  */
+
+
+.img-center-password{
+    background-image: url("/public/images/pass.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 60%;
+    height: 60%; 
+
+}
+ 
+
+
+.login-form #cover{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit{
+    border-radius:5px;
+}
+
+#cover .btn-submit{
+    height: 3em; 
+
+}
+.login-form #cover input, .login-form  .btn-submit{
+    width: 70%;
+}
+
+
+ /* the menu page style*/
+
+
+ .menu-header{  
+    height: 15%; 
+
+ }
+
+ .menu-header .target{
+    font-size: 1.3em;
+ }
+ section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 2em;
+ }
+
+ section a{
+    display: block;
+    height: 10%;
+    width: 80%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+
+ }
+
+.home{
+    
+    background-image: url("/public/images/home.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1.5em;
+    width: 1.5em; 
+
+    margin-left: 10%;
+ }
+
+ .home ~ h4{
+    margin-left: 10%;
+ }
+
+ .login{
+    
+    background-image: url("/public/images/Login.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.5em;
+    width: 2.5em;  
+
+    margin-left: 8%;
+ }
+
+ .login ~ h4, .vagas ~h4, .candidato~h4, .empresa ~h4,.pendentes ~ h4, .notif ~ h4{
+    margin-left: 7%;
+ }
+
+ .vagas{
+    
+    background-image: url("/public/images/vagas.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.5em;
+    width: 2.5em;    
+    margin-left: 8%;
+ }
+
+
+ 
+ .candidato{
+    
+    background-image: url("/public/images/candidato.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.5em;
+    width: 2.5em;    
+    margin-left: 8%;
+ }
+
+ 
+ .empresa{
+    
+    background-image: url("/public/images/empresa.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.5em;
+    width: 2.5em;    
+    margin-left: 8%;
+ }
+
+
+ /* dashboard style */
+
+
+.dashboard-app{ 
+    width: 100%;
+    height: 100%;
+} 
+.btn-toggle{ 
+    display: flex; 
+    justify-content: flex-end; 
+    padding: 1em;
+} 
+.dash{ 
+    
+    background-image: url("/public/images/q.jfif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 29.5em;
+    height:29.5em; 
+    transform: translateY(-2em);  
+}
+ 
+
+/*dasboard menu style*/
+ .pendentes{
+    
+    background-image: url("/public/images/flatLight47.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.5em;
+    width: 2.5em;  
+
+    margin-left: 8%;
+ }
+ 
+ .notif{
+    
+    background-image: url("/public/images/not.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.5em;
+    width: 2.5em;  
+
+    margin-left: 8%;
+ }
+
+ 
+ .sair{
+    
+    background-image: url("/public/images/flatLight19.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.5em;
+    width: 2.5em;  
+    margin-left: 8%;
+ }
+
+ section a ~ form{
+    border: 1px solid black;
+    height: 10%;
+    width: 80%;
+    cursor: pointer;
+ }
+ 
+ section .perfil{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 80%;
+    height: 10%; 
+ }
+
+ section .perfil:hover{
+    background: none;
+ }
+
+
+ /*Carta de apresentação style*/
+
+ .img-center-carta{
+    background-image: url("/public/images/carta.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 60%;
+    height: 60%; 
+
+ }
+
+
+ .first-report , .second-report{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ #report2 button, #sobre{
+    width: 70%;
+}
+ 
+
+#alert_carta{ 
+    width: 70%;
+}
+
+
+/*Empresa register style */
+.img-empresa-register{
+    background-image: url("/public/images/register.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 60%;
+    height: 60%; 
+}
+
+
+
